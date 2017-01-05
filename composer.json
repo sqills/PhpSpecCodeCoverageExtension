@@ -1,5 +1,5 @@
 {
-    "name" : "henrikbjorn/phpspec-code-coverage",
+    "name" : "sqills/phpspec-code-coverage",
     "description" : "Integrates CodeCoverage with PhpSpec",
     "license" : "MIT",
 
