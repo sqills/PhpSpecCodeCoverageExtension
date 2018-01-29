@@ -3,6 +3,7 @@
 namespace spec\PhpSpecCodeCoverage\Listener;
 
 use PhpSpec\ObjectBehavior;
+use PhpSpecCodeCoverage\Listener\CodeCoverageListener;
 use Prophecy\Argument;
 
 use PhpSpec\Console\ConsoleIO;
@@ -21,7 +22,7 @@ class CodeCoverageListenerSpec extends ObjectBehavior
 
     function it_is_initializable()
     {
-        $this->shouldHaveType('\PhpSpecCodeCoverage\Listener\CodeCoverageListener');
+        $this->shouldHaveType(CodeCoverageListener::class);
     }
 
     function it_should_run_all_reports(

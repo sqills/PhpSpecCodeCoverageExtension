@@ -2,8 +2,8 @@
 
 namespace PhpSpecCodeCoverage;
 
+use PhpSpec\Extension;
 use PhpSpec\ServiceContainer;
-use PhpSpec\Extension\ExtensionInterface;
 
 use SebastianBergmann\CodeCoverage\CodeCoverage;
 use SebastianBergmann\CodeCoverage\Filter;
@@ -15,7 +15,7 @@ use PhpSpecCodeCoverage\Listener\CodeCoverageListener;
  * Injects an Event Subscriber into the EventDispatcher.
  * The Subscriber will, before each example, add CodeCoverage information.
  */
-class CodeCoverageExtension implements ExtensionInterface
+class CodeCoverageExtension implements Extension
 {
     /**
      * {@inheritDoc}

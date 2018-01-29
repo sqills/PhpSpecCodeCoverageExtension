@@ -3,15 +3,15 @@
 namespace spec\PhpSpecCodeCoverage;
 
 use PhpSpec\ObjectBehavior;
-use Prophecy\Argument;
-
 use PhpSpec\ServiceContainer\IndexedServiceContainer;
+
+use PhpSpecCodeCoverage\CodeCoverageExtension;
 
 class CodeCoverageExtensionSpec extends ObjectBehavior
 {
     function it_is_initializable()
     {
-        $this->shouldHaveType('\PhpSpecCodeCoverage\CodeCoverageExtension');
+        $this->shouldHaveType(CodeCoverageExtension::class);
     }
 
     function it_should_use_html_format_by_default()
